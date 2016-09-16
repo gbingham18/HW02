@@ -59,29 +59,34 @@ private:
 
 	public:
 
+		std::string name; // Name of Individual represented in entry
+
+		std::string number; // Phone number of the individual in this entry
+
 		Directory_Entry() {} // Default no-argument constructor
 
 		Directory_Entry(std::string the_name, std::string the_number) {
 
-			// constructor not implemented yet
+			name = the_name;
+			number = the_number; // Creates a new Directory_Entry object with specified name and number
 
 		}
 
 		std::string get_name() const {
 
-			return ""; // method not implemented yet
+			return "name"; // Retrieves the name of specified entry
 
 		}
 
 		std::string get_number() const {
 
-			return ""; // method not implemented yet
+			return "number"; // Retrieves the number of specified entry
 
 		}
 
 		void set_number(const std::string& new_number) {
 
-			// method not implemented yet
+			number = new_number; // Sets the number to the specified value
 
 		}
 
