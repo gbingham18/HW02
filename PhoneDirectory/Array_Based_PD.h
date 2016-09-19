@@ -80,7 +80,7 @@ private:
 
 		std::string get_number() const {
 
-			return "number"; // Retrieves the number of specified entry
+			return "number"; // Retrieves the number of specified entry in the Directory
 
 		}
 
