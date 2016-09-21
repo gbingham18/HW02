@@ -46,20 +46,10 @@ public:
 		@return The person's name or an empty string if not in
 		the directory
 		*/
-	std::string remove_entry(const std::string& name)
-	{
-		find(name);
-		if()
-		{
-			
-		}
-		else
-		{
-			
-		}
+	std::string remove_entry(const std::string& name);
 		/** Writes the contents of the directory to the data file.
 		*/
-	}
+	
 	
 	void save();
 

@@ -115,7 +115,19 @@ void Phone_Directory::save()
 	*/
 string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please complete the remove_entry() method - Ed/Kent
 {
-
+	find(name);
+	if (find(name) != -1)
+	{
+		the_directory[find(name)] = the_directory[size];
+		//I initially tried to set the_directory[find(name)] = NULL, but there was an error saying the = operator wasnt defined.
+		//So instead I set the the_direcotry[find(name)] element to the last element which will likely be empty.
+		int index = find(name);
+		for (int i = index; i < size - 1; i++)
+		{
+			the_directory[i] = the_directory[i + 1];
+		}
+		size = size - 1;
+	}
 	// Hint: you can use the code below to shift names down in the directory to remove the selected entry specified by "index"
 	// for (int i = index; i < size - 1; i++)
 		// the_directory[i] = the_directory[i + 1];
